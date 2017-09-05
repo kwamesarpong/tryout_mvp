@@ -1,0 +1,46 @@
+{
+  "name": "unilitics_mvp",
+  "version": "1.0.0",
+  "description": "The first version of the unilitics application",
+  "main": "server.js",
+  "repository": "https://kwamesarpong@bitbucket.org/spanateam/unilitics_mvp.git",
+  "author": "Kwame Sarpong",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "dev:build": "yarn run clean && webpack -w",
+    "dev": "cross-env NODE_ENV=development nodemon dist/server.bundle.js"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.17.2",
+    "compression": "^1.7.0",
+    "cross-env": "^5.0.5",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "express": "^4.15.4",
+    "express-validation": "^1.0.2",
+    "helmet": "^3.8.1",
+    "joi": "^10.6.0",
+    "jsonwebtoken": "^7.4.3",
+    "mongoose": "^4.11.9",
+    "nodemon": "^1.11.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.0",
+    "passport-local": "^1.0.0",
+    "validator": "^8.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.5.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "morgan": "^1.8.2",
+    "rimraf": "^2.6.1",
+    "webpack": "^3.5.5",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
